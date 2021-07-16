@@ -1,7 +1,8 @@
+import React from "react";
 import NavBar from "./components/NavBar";
 import fetchApi from "./Api/fetchApi";
 import { useLocation, Switch, Route } from "react-router-dom";
-import { routes } from "./routes/Index";
+import { routes } from "./routes/index";
 import "./css/App.css";
 
 const App = () => {
