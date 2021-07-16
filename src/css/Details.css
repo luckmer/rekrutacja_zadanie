@@ -1,0 +1,154 @@
+:root {
+  --dark: #23272b;
+  --white: #fff;
+  --boxDark: #0000001a;
+  --boxDarker: #0000000f;
+  --borderDark: #00000020;
+  --LightGrey: #a7a7a7;
+  --grey: #dddddd;
+  --darkWhite: #efefef;
+  --lightPurple: #b4b3ff;
+}
+
+.detail_section {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.detail_card {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid var(--borderDark);
+  border-radius: 0.25rem;
+}
+
+.detail_body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.header {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.header_author {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header_author span {
+  font-weight: bold;
+  color: var(--LightGrey);
+  font-size: 17px;
+}
+
+.description_spacer {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  border-radius: 5px;
+  padding: 0 30px 10px 30px;
+  background: var(--white);
+  border-left: 5px solid var(--lightPurple);
+}
+
+.comments_container,
+.form_panel {
+  margin: 0 20px 0 20px;
+}
+
+.comments_card {
+  background: var(--white);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 4%);
+  border: 1px solid var(--borderDark);
+  box-shadow: var(--boxDark) 0px 4px 6px -1px, var(--boxDarker) 0px 2px 4px -1px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.Comments {
+  margin: 0 30px 10px 30px;
+}
+
+.comments_card,
+.form_card {
+  padding: 20px;
+}
+
+.comments_user {
+  margin-bottom: 10px;
+}
+
+.comments_user h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.form_card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid var(--grey);
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.form_card input[type="submit"] {
+  border: 0;
+  padding: 20px;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 10px;
+  border-left: 5px solid var(--lightPurple);
+  border-right: 1px solid var(--darkWhite);
+  transition: all 0.5s ease;
+}
+
+.form_card input[type="submit"]:hover {
+  border: 0;
+  padding: 20px;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 10px;
+  border-left: 1px solid var(--darkWhite);
+  border-right: 7px solid var(--lightPurple);
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
