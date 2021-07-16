@@ -20,7 +20,7 @@ const Blog = () => {
       dispatch(Restart());
     }
     setFilterResult(filterS);
-  }, [state, likes, setFilterResult]);
+  }, [dispatch, state, likes.start, likes.Likes]);
 
   const BLOG = { currentItems, likes, handleFetchId, handleLike };
 
