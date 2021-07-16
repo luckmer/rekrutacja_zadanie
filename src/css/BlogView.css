@@ -1,0 +1,136 @@
+:root {
+  --lightBlue: #1fa3ec;
+  --dark: #23272b;
+  --orange: #e98724;
+  --white: #fff;
+  --boxDark: #0000001a;
+  --boxDarker: #0000000f;
+  --borderDark: #00000020;
+}
+
+.Blog_Container {
+  width: 100%;
+  height: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.Blog_Header {
+  text-align: center;
+  padding-top: 30px;
+  padding: 0 30px 0 30px;
+}
+
+.Blog_Header h3 {
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-weight: bold;
+}
+
+.Blog_Header hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Off {
+  display: none;
+}
+
+.article_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.article_col {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 33%;
+  max-height: 33%;
+}
+
+.article_card {
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--white);
+  background-clip: border-box;
+  border: 1px solid var(--borderDark);
+  border-radius: 0.25rem;
+}
+
+.article_body {
+  box-shadow: var(--boxDark) 0px 4px 6px -1px, var(--boxDarker) 0px 2px 4px -1px;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.article_panel {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_panel_on {
+  transition: all 0.5s;
+  margin: 5px;
+  font-weight: 400;
+  color: var(--white);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.article_panel {
+  display: flex;
+  justify-content: center;
+}
+
+.article_panel_off {
+  transition: all 0.5 ease;
+  margin: 5px;
+  font-weight: 400;
+  color: var(--white);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: var(--lightBlue);
+  cursor: pointer;
+}
+
+.article_panel_off:hover {
+  box-shadow: var(--boxDark) 0px 4px 6px -1px, var(--boxDarker) 0px 2px 4px -1px;
+}
+
+@media screen and (max-width: 980px) {
+  .article_section {
+    flex-direction: column;
+  }
+
+  .article_col {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.article_header {
+  margin-bottom: 15px;
+}
